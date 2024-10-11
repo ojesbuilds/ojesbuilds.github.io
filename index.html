@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System & Interactive Earth Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Explore the Solar System and Earth</h1>
+    </header>
+
+    <section id="solar-system">
+        <h2>3D Solar System Model</h2>
+        <div id="solar-system-canvas"></div>
+    </section>
+
+    <section id="planet-facts">
+        <h2>Facts About Planets</h2>
+        <div id="planet-info">
+            <div class="planet" id="mercury">
+                <h3>Mercury</h3>
+                <p>Mercury is the smallest planet in the Solar System and closest to the Sun...</p>
+            </div>
+            <div class="planet" id="venus">
+                <h3>Venus</h3>
+                <p>Venus has a thick atmosphere of carbon dioxide, making it the hottest planet...</p>
+            </div>
+            <!-- Add similar divs for other planets -->
+        </div>
+    </section>
+
+    <section id="interactive-map">
+        <h2>Interactive Map of Earth</h2>
+        <div id="map"></div>
+    </section>
+
+    <script src="solar-system.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
